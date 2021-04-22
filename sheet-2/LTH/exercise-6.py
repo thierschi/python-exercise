@@ -71,8 +71,8 @@ L = list(itertools.permutations(['A', 'B', 'C', 'D']))
 
 print_list(L)  # Output list for checking purposes
 
-L_copy = L.copy() # CHANGE
-for x in L_copy: # CHANGE
+L_copy = L.copy()  # CHANGE A
+for x in L_copy:  # CHANGE A
     aIndex = x.index('A')  # position of 'A'
     cIndex = x.index('C')  # position of 'C'
     print(cIndex < aIndex, x)
