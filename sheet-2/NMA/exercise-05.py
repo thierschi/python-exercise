@@ -22,7 +22,7 @@ else:
 #            difference if you first cast to float and than int or the other way round.
 # l.13: Changed to 1E-4 because the Exercise says e:=10^-4 which is the same as 1E-4.
 # l.14: Take the absolute amount [abs(..)] of X-Y, because otherwise you get an negative value, when Y is bigger than X.
-# l.14: It have to be <, because you want to check if X and Y differ in less than e not in more than e.
+# l.14: It has to be <, because you want to check if X and Y differ in less than e not in more than e.
 # l.14: ':' was missing in the end, the python syntax requests the ':'.
 # l.15: The code block after an 'if' statement has to be indented.
 # l.16: ':' was missing after the 'else', the python syntax requests the ':'.

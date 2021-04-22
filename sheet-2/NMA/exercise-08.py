@@ -15,6 +15,7 @@ while running:
             print('Your entered value isn\'t between 1 and 100!')
         else:
             break
+    z *= 9
 
     # 2)
     x = 0
