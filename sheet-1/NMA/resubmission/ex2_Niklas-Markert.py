@@ -1,9 +1,8 @@
 # ------------------------------------------------------------------------------
 
-# Sheet 1 Exercise 2
+# Sheet 1 Exercise 2 - Resubmission
 
 # Niklas Markert - 1611460 / bt70985
-# Lukas Thiersch - 1607110 / bt708626
 
 # ------------------------------------------------------------------------------
 
@@ -44,7 +43,7 @@
 def are_floats_nearly_equal(a, b):
     # We check if the deviation between a, b
     # is less than the tolerated deviation
-    tolerated_deviation = 0.001
+    tolerated_deviation = 1e-15
     return abs(a - b) < tolerated_deviation
 
 
