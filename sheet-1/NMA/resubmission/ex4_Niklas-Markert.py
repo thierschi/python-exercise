@@ -24,28 +24,33 @@
 
 # c) Consider the following list:
 L = ['zz', 'yy', 'xx', 'ww', 'vv']
+print(L)
 
 # 1) What does L[-1] evaluate to? What does L[:3] evaluate to?
-L[-1] # evaluates to 'vv', because using a negative index returns the item
+# L[-1] evaluates to 'vv', because using a negative index returns the item
 # at the position starting from the end of the list
-L[:3] # evaluates to ['zz', 'yy', 'xx']:
+print(L[-1])
+# L[:3] evaluates to ['zz', 'yy', 'xx']:
 #   You can slice with the [] operator in that case you can use it like so:
 #   [start:end:step] -> start is the start of the slice
 #                       end is the end of it (excluding)
 #                       step is taking every nth element
 # When writing :3 python assumes start to be 0.
+print(L[:3])
 
 # 2) How can you access the first element of the list?
-# You can access the first item of a list with index 0:
-L[0]
+# You can access the first item of a list with index 0 by L[0]
+print(L[0])
 
 # 3) Delete the second last element.
-# With del you can delete an item of a list. In this case it'd be:
+# With del you can delete an item of a list based on his index. In this case it'd be:
 del L[-2]
+print(L)
 
 # 4) Add the element '11' at the beginning of the list.
 # You can insert items to a list with {listname}.insert(index, item).
 # In this case we would prepend the item '11' as follows:
 L.insert(0, '11')
+print(L)
 
 # ------------------------------------------------------------------------------
