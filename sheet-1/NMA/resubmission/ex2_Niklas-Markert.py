@@ -8,8 +8,8 @@
 
 # a) What does inf mean? When does it occur in Python?
 
-# The abbreviation inf stands for infinity. It occurs when an integer gets
-# larger than the largest integer that can be represented by the type.
+# The abbreviation inf stands for infinity. It occurs whenever the variable
+# exceeds the upper bound of the respective data type.
 
 # ------------------------------------------------------------------------------
 
