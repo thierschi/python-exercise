@@ -1,6 +1,6 @@
 # python-exercise
 
-Github Repo for the solutions for the excercises of the course
+Github Repo for the solutions for the excercises of the course [Programming, Data Analysis and Deep Learning in Python](https://elearning.uni-bayreuth.de/course/view.php?id=29907).
 
 File name: `ex01_Niklas-Markert_Lukas-Thiersch`
 

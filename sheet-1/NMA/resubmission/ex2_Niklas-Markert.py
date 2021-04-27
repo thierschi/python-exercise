@@ -1,16 +1,15 @@
 # ------------------------------------------------------------------------------
 
-# Sheet 1 Exercise 2
+# Sheet 1 Exercise 2 - Resubmission
 
 # Niklas Markert - 1611460 / bt70985
-# Lukas Thiersch - 1607110 / bt708626
 
 # ------------------------------------------------------------------------------
 
 # a) What does inf mean? When does it occur in Python?
 
-# The abbreviation inf stands for infinity. It occurs when an integer gets
-# larger than the largest integer that can be represented by the type.
+# The abbreviation inf stands for infinity. It occurs whenever the variable
+# exceeds the upper bound of the respective data type.
 
 # ------------------------------------------------------------------------------
 
@@ -44,7 +43,7 @@
 def are_floats_nearly_equal(a, b):
     # We check if the deviation between a, b
     # is less than the tolerated deviation
-    tolerated_deviation = 0.001
+    tolerated_deviation = 1e-15
     return abs(a - b) < tolerated_deviation
 
 
