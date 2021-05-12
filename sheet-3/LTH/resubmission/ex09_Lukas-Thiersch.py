@@ -9,7 +9,7 @@
 
 inventory_bakery = {'Flour': 23485, 'Salt': 329, 'Yeast': 834}
 recipe_bread = {'Flour': 500, 'Water': 300, 'Salt': 9, 'Yeast': 30}
-
+infinite_ingredients = ['Water']
 
 # ------------
 # a)
@@ -27,6 +27,8 @@ def possible_amount_bread(inventory, recipe):
     amounts = []
 
     for ingredient in recipe.keys():
+        if ingredient in infinite_ingredients:
+            continue
         amounts.append(inventory[ingredient] // recipe[ingredient])
 
     return min(amounts)
@@ -46,6 +48,8 @@ def bake_breads(amount, inventory, recipe):
     :return: None
     """
     for ingredient in recipe.keys():
+        if ingredient in infinite_ingredients:
+            continue
         inventory[ingredient] -= amount * recipe[ingredient]
 
     # In the exercise it says: "using (one of) the above operator(s)".
