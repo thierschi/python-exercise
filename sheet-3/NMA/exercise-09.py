@@ -32,7 +32,7 @@ def possible_amount_bread(inventory, recipe):
 
 
 amount_bread = possible_amount_bread(inventory_bakery, recipe_bread)
-print('With you inventory you can cake', amount_bread, 'breads.')
+print('With your inventory you can bake', amount_bread, 'breads.')
 
 
 def bake_breads(amount, inventory, recipe):

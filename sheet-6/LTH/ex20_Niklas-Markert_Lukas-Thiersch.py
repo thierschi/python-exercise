@@ -64,7 +64,7 @@ X_impl = np.concatenate(step_results, 1)
 # with which the real values are approximated. The more frequent I try to approximate
 # the real values the more precise they will get. And that is exactly what I observe:
 #   With h = 60 the approximation is more precise => Closer to the plot of X_sol
-#   With h = 120 the approximation is less precise => Farther away from the plot of X_sol
+#   With h = 240 the approximation is less precise => Farther away from the plot of X_sol
 
 # Plots:
 plt.plot(np.arange(k) * h, X_sol[0, :], color='r', label='x1')
