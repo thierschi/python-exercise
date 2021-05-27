@@ -20,7 +20,7 @@ def x_sol(t, x):
     x[2] = np.exp(-3*t/2000) * (125/3*np.cos(np.sqrt(3)*t/2000) + 125*np.sqrt(3)/9 * np.sin(np.sqrt(3)*t/2000)) + t/24 - 125/3
 
 
-h = 240
+h = 120
 t = 1440
 k = t // h + 1 # + 1 for t = 0
 # => With until_time 1440 and step size 120 you need 13 steps (1440/120 + 1)
@@ -29,7 +29,6 @@ X_sol = np.zeros((3, k))
 for steps in range(k):
      x_sol(steps * h, X_sol[:, steps])
 
-print(X_sol)
 # a)
 A = np.array([[-1, 0, 1],
               [1, -1, 0],
