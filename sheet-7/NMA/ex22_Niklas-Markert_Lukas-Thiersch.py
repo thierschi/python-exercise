@@ -19,10 +19,9 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('./ex22_data.csv', index_col='order')
 
 
-
 # b)
 
-df['sum'] = df[['Problem 1', 'Problem 2', 'Problem 3', 'Problem 4', 'Problem 5', 'Problem 6']].sum(axis=1)
+df['sum'] = df.loc[:, 'Problem 1': 'Problem 6'].sum(axis=1)
 
 print('--------- a) / b) ---------')
 print('The head of the dataframe df, after the column sum got add:')
@@ -68,4 +67,4 @@ perc_less_33 = len(df[df['Problem 1']/8 < 0.33]) / len(df)
 
 print('\n----------- e) -----------')
 print('The percentage of students with less than 33% of points in Problem 1 is:')
-print(perc_less_33)
+print(str(perc_less_33*100) + '%')
