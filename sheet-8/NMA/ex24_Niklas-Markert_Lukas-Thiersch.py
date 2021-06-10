@@ -48,6 +48,6 @@ bigger_than_right = rnd > np.roll(rnd, -1)
 bigger_than_left = rnd > np.roll(rnd, 1)
 bigger_than_both = bigger_than_right & bigger_than_left
 
-loc_min = (rnd[1:-1])[bigger_than_both[1:-1]]  # The slicing with [1:-1] is done to ignore the border cases
+loc_max = (rnd[1:-1])[bigger_than_both[1:-1]]  # The slicing with [1:-1] is done to ignore the border cases
 print('All local maxima of this array:')
-print(loc_min)
+print(loc_max)
