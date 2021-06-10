@@ -12,6 +12,11 @@ import matplotlib.pyplot as plt
 
 # ------------------------------------------------------------------------------
 
+# GENERAL NOTE regarding the question NMA asked in the e-learning forum:
+# We interpret the data as only one discovered planet per row.
+
+# ------------------------------------------------------------------------------
+
 # a) Import the csv file and display only the first five elements.
 
 df = pd.read_csv('ex23_data.csv')
@@ -53,7 +58,7 @@ print()
 # f)  Between 1989 and 1992, were there any years with no new planets discovered
 # and if yes, which years?
 
-years_between = df.loc[df['year'] <= 1992]
+years_between = df.loc[df['year'] >= 1989].loc[df['year'] <= 1992]
 years_without = []
 for i in range(1989, 1992):
     if len(df.loc[df['year'] == i]) == 0:
