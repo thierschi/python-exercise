@@ -84,4 +84,3 @@ plt.show()
 # Also a learning rate of 0.008 produces overflows in our code.
 
 # ------------------------------------------------------------------------------
-
