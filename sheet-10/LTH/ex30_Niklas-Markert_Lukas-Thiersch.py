@@ -62,7 +62,7 @@ plt.contour(wlin, blin, f_values.reshape(N, N), levels=np.logspace(-1,3,8))
 
 # d) Find the parameters w and b that minimize f(w,b) and print these parameters
 # as well as the corresponding function value.
-params, grads, costs = optimize(0, 0, 7500, 0.001)
+params, grads, costs = optimize(0, 0, 7500, 0.003)
 print('----- d) -----')
 print('w:', params['w'])
 print('b:', params['b'])
