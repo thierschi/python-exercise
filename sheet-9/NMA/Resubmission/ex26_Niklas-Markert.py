@@ -44,7 +44,7 @@ df.drop(df.index[0], inplace=True)
 
 # c)
 print('\n----- c) -----')
-respondents = len(df)
+respondents = len(df) 
 print('Respondents in the data set:', respondents)
 male = len(df[df['gender'] == 'Male'])
 print('Amount of male respondents:', male)
